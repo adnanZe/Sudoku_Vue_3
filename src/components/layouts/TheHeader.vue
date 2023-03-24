@@ -6,11 +6,7 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {};
-  },
-};
+export default {};
 </script>
 
 <style scoped>
@@ -29,5 +25,6 @@ img {
 h1 {
   margin-left: 1rem;
   color: white;
+  font-size: 1.5rem;
 }
 </style>
