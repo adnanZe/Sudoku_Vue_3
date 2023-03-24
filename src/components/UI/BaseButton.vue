@@ -22,11 +22,11 @@ export default {
 button {
   background-color: #eaeef499;
   color: #0072e3;
-  font-size: 1.5rem;
   font-weight: lighter;
+  font-size: 2rem;
   border: 0;
+  padding: 0;
   border-radius: 7px;
-  padding: 0.5rem 1rem;
 }
 
 button:hover {
@@ -38,13 +38,14 @@ button:hover {
 }
 
 .square {
-  /* added to escape from warning */
+  /* escape from warning */
   margin: 0;
 }
 
 .primary {
   background-color: #0072e3;
   color: white;
+  font-size: 1.3rem;
 }
 
 .primary:hover {

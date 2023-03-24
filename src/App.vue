@@ -1,7 +1,8 @@
 <template>
   <the-header></the-header>
   <main>
-    <the-commands></the-commands>
+    <the-sudoku></the-sudoku>
+    <the-commands @newGame="onNewGame"></the-commands>
   </main>
   <the-footer></the-footer>
 </template>
@@ -10,8 +11,15 @@
 import TheCommands from "./components/commands/TheCommands.vue";
 import TheFooter from "./components/layouts/TheFooter.vue";
 import TheHeader from "./components/layouts/TheHeader.vue";
+import TheSudoku from "./components/sudoku-grid/TheSudoku.vue";
 export default {
-  components: { TheHeader, TheFooter, TheCommands },
+  components: { TheHeader, TheFooter, TheCommands, TheSudoku },
+
+  methods: {
+    onNewGame() {
+      console.log("hit new game");
+    },
+  },
 };
 </script>
 
@@ -28,5 +36,13 @@ html {
 
 body {
   margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
 }
 </style>
