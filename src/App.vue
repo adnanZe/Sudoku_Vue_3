@@ -1,13 +1,15 @@
 <template>
   <the-header></the-header>
+  <the-comands></the-comands>
   <the-footer></the-footer>
 </template>
 
 <script>
+import TheComands from "./components/comannds/TheComands.vue";
 import TheFooter from "./components/layouts/TheFooter.vue";
 import TheHeader from "./components/layouts/TheHeader.vue";
 export default {
-  components: { TheHeader, TheFooter },
+  components: { TheHeader, TheFooter, TheComands },
 };
 </script>
 
