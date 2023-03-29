@@ -25,11 +25,9 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  // emits: ["new-game", "undo", "erase", "take-notes", "add-number"],
-});
+export default {
+  emits: ["new-game", "undo", "erase", "take-notes", "add-number"],
+};
 </script>
 
 <style scoped>

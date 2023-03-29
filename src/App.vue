@@ -12,13 +12,25 @@ import TheCommands from "./components/commands/TheCommands.vue";
 import TheFooter from "./components/layouts/TheFooter.vue";
 import TheHeader from "./components/layouts/TheHeader.vue";
 import TheSudoku from "./components/sudoku-grid/TheSudoku.vue";
+import { generateSudokuStates } from "./services/generateSudokuStates.js";
+
 export default {
   components: { TheHeader, TheFooter, TheCommands, TheSudoku },
+
+  data() {
+    return {
+      cellsState: [],
+    };
+  },
 
   methods: {
     onNewGame() {
       console.log("hit new game");
     },
+  },
+
+  mounted() {
+    console.log(generateSudokuStates());
   },
 };
 </script>
