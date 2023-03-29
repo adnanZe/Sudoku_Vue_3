@@ -49,6 +49,10 @@ button:hover {
 }
 
 .primary:hover {
-  background-color: #0040aa;
+  background-color: #0072e3cc;
+}
+
+button:hover {
+  background-color: #eaeef4ee;
 }
 </style>

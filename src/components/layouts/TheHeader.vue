@@ -19,7 +19,8 @@ header {
 }
 
 img {
-  height: 30px;
+  height: 50px;
+  filter: invert(100%);
 }
 
 h1 {
