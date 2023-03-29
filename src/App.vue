@@ -1,7 +1,7 @@
 <template>
   <the-header></the-header>
   <main>
-    <the-sudoku></the-sudoku>
+    <the-sudoku :cellsState="cellsState"></the-sudoku>
     <the-commands @newGame="onNewGame"></the-commands>
   </main>
   <the-footer></the-footer>
@@ -30,7 +30,7 @@ export default {
   },
 
   mounted() {
-    console.log(generateSudokuStates());
+    this.cellsState = generateSudokuStates();
   },
 };
 </script>
